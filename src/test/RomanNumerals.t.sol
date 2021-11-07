@@ -57,4 +57,24 @@ contract TestRomanNumerals is RomanNumeralsTest {
   function test_returns_XC_when_input_is_ninety() public {
     assertEq(romanNumerals.convert(90), "CX");
   }
+
+  function test_returns_C_when_input_is_one_hundred() public {
+    assertEq(romanNumerals.convert(100), "C");
+  }
+
+  function test_returns_CD_when_input_is_four_hundred() public {
+    assertEq(romanNumerals.convert(400), "CD");
+  }
+
+  function test_returns_CD_when_input_is_five_hundred() public {
+    assertEq(romanNumerals.convert(500), "D");
+  }
+
+  function test_returns_CD_when_input_is_nine_hundred() public {
+    assertEq(romanNumerals.convert(900), "CM");
+  }
+
+  function test_returns_CD_when_input_is_one_thousand() public {
+    assertEq(romanNumerals.convert(1000), "M");
+  }
 }

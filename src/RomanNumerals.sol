@@ -8,7 +8,12 @@ contract RomanNumerals {
   }
 
   function convert(uint n) public pure returns (string memory) {
-    Roman[8] memory romanNumeralsToNumber = [
+    Roman[13] memory romanNumeralsToNumber = [
+      Roman("M", 1000),
+      Roman("CM", 900),
+      Roman("D", 500),
+      Roman("CD", 400),
+      Roman("C", 100),
       Roman("CX", 90),
       Roman("L", 50),
       Roman("XL", 40),
